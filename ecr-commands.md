@@ -1,5 +1,12 @@
 # AWS CLI - ECR commands
 
+List repositories
+-------------------------------------
+`aws ecr describe-repositories --region <region>`
+
+-------------------------------------
+<br>
+
 Create a repository
 -------------------------------------
 `aws ecr create-repository
@@ -14,6 +21,15 @@ Authenticate to your default registry
 `aws ecr get-login-password
     --region <region>
     | docker login --username AWS --password-stdin <registry-uri>
+`
+-------------------------------------
+<br>
+
+Describe images in a repository
+-------------------------------------
+`aws ecr describe-images 
+    --repository-name <repository-name> 
+    --region <region>
 `
 -------------------------------------
 <br>
