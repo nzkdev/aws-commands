@@ -7,6 +7,7 @@ Create a repository
     --region <region>
 `
 -------------------------------------
+<br>
 
 Authenticate to your default registry
 -------------------------------------
@@ -15,6 +16,7 @@ Authenticate to your default registry
     | docker login --username AWS --password-stdin <registry-uri>
 `
 -------------------------------------
+<br>
 
 Push an image to ECR
 -------------------------------------
@@ -22,12 +24,14 @@ List images: `docker images` <br>
 Tag image to repository: `docker tag <image>:<tag> <registry-uri>/<repository-name>:<tag>` <br>
 Push image: `docker push <registry-uri>/<repository-name>:<tag>`
 -------------------------------------
+<br>
 
 Pull an image from ECR
 -------------------------------------
 `docker pull <registry-uri>/<repository-name>:<tag>`
 
 -------------------------------------
+<br>
 
 Delete an image
 -------------------------------------
@@ -37,6 +41,7 @@ Delete an image
     --region <region>
 `
 -------------------------------------
+<br>
 
 Delete a repository
 -------------------------------------
